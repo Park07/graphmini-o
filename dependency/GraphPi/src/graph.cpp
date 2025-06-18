@@ -9,7 +9,10 @@
 #include <omp.h>
 #include <algorithm>
 #include <cstring>
+#ifdef MPI_FOUND
 #include <mpi.h>
+#endif
+
 #include <atomic>
 #include <queue>
 #include <iostream>

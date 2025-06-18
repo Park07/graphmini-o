@@ -1,14 +1,14 @@
 SET(GraphMiningSrc
         TestClass.cpp
-        graph.cpp
+        # graph.cpp - needs MPI that's causign the errors
         dataloader.cpp
         pattern.cpp
         prefix.cpp
         schedule.cpp
         vertex_set.cpp
         motif_generator.cpp
-        graphmpi.cpp
-        common.cpp
+        # graphmpi.cpp
+        # common.cpp
         disjoint_set_union.cpp
         )
 
