@@ -1,3 +1,19 @@
+// configurig for mac
+#ifdef __APPLE__
+#include <sys/mman.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+#else
+#include <sys/mman.h>
+#include <unistd.h>
+#include <fcntl.h>
+#endif
+
+#ifndef MAP_FAILED
+#define MAP_FAILED ((void *) -1)
+#endif
+
 #include "codegen_output/plan.h"
 #include "configure.h"
 #include "common.h"

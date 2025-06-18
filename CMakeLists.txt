@@ -1,41 +1,75 @@
 cmake_minimum_required(VERSION 3.20)
 project(GraphMini)
+
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
-set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb -fno-omit-frame-pointer")
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# macOS specific settings
 if(APPLE)
-    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -mno-omit-leaf-frame-pointer")
-    set(OpenMP_C "${CMAKE_C_COMPILER}")
-    set(OpenMP_C_FLAGS "-Xclang -fopenmp -I/usr/local/opt/libomp/include")
-    set(OpenMP_C_LIB_NAMES "libomp")
-    set(OpenMP_libomp_LIBRARY "omp")
-
-    set(OpenMP_CXX "${CMAKE_CXX_COMPILER}")
-    set(OpenMP_CXX_FLAGS "-Xclang -fopenmp -I/usr/local/opt/libomp/include")
-    set(OpenMP_CXX_LIB_NAMES "libomp")
-    set(OpenMP_libomp_LIBRARY "omp")
-    link_directories("/usr/local/opt/libomp/lib/")
-    include_directories("usr/local/opt/libomp/include")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+    # Use Homebrew's LLVM OpenMP
+    set(OpenMP_ROOT /opt/homebrew/opt/libomp)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Xpreprocessor -fopenmp")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lomp")
 endif()
-add_subdirectory(dependency/GraphPi EXCLUDE_FROM_ALL)
-add_subdirectory(dependency/cxxopts EXCLUDE_FROM_ALL)
-add_subdirectory(dependency/oneTBB EXCLUDE_FROM_ALL)
-add_subdirectory(dependency/fmt EXCLUDE_FROM_ALL)
-find_package(MPI REQUIRED)
+
+# Find packages
 find_package(OpenMP REQUIRED)
+find_package(TBB REQUIRED)
+find_package(MPI REQUIRED)
 
-set(PROJECT_PROFILE_DIR "${PROJECT_SOURCE_DIR}/profile/")
-set(PROJECT_LOG_DIR "${PROJECT_SOURCE_DIR}/log/")
-set(PROJECT_PLAN_DIR "${PROJECT_SOURCE_DIR}/plan/")
+# Add fmt library (install via brew install fmt or use FetchContent)
+find_package(fmt QUIET)
+if(NOT fmt_FOUND)
+    include(FetchContent)
+    FetchContent_Declare(
+        fmt
+        GIT_REPOSITORY https://github.com/fmtlib/fmt.git
+        GIT_TAG 9.1.0
+    )
+    FetchContent_MakeAvailable(fmt)
+endif()
 
-configure_file(include/configure.h.in ${PROJECT_BINARY_DIR}/configure/configure.h)
-message("PROJECT_BINARY_DIR: " ${PROJECT_BINARY_DIR})
-message("PROJECT_SOURCE_DIR: " ${PROJECT_SOURCE_DIR})
-message("CMAKE_CXX_FLAGS_DEBUG: " ${CMAKE_CXX_FLAGS_DEBUG})
-message("CMAKE_CXX_FLAGS_RELEASE: " ${CMAKE_CXX_FLAGS_RELEASE})
-include_directories(${PROJECT_BINARY_DIR}/configure)
+# Add cxxopts for command line parsing
+find_package(cxxopts QUIET)
+if(NOT cxxopts_FOUND)
+    include(FetchContent)
+    FetchContent_Declare(
+        cxxopts
+        GIT_REPOSITORY https://github.com/jarro2783/cxxopts.git
+        GIT_TAG v3.1.1
+    )
+    FetchContent_MakeAvailable(cxxopts)
+endif()
+
+# Include directories
 include_directories(include)
+include_directories(dependency)
+
+# Configure header
+configure_file(include/configure.h.in include/configure.h @ONLY)
+include_directories(${CMAKE_BINARY_DIR}/include)
+
+# Set output directories
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
+set(PROJECT_PLAN_DIR ${CMAKE_BINARY_DIR}/plan)
+set(PROJECT_LOG_DIR ${CMAKE_BINARY_DIR}/log)
+set(PROJECT_PROFILE_DIR ${CMAKE_BINARY_DIR}/profile)
+
+# Create directories
+file(MAKE_DIRECTORY ${PROJECT_PLAN_DIR})
+file(MAKE_DIRECTORY ${PROJECT_LOG_DIR})
+file(MAKE_DIRECTORY ${PROJECT_PROFILE_DIR})
+
+# Add subdirectories
+add_subdirectory(dependency/GraphPi)
 add_subdirectory(src)
+
+# Install dependencies for macOS
+if(APPLE)
+    # Add Homebrew paths
+    include_directories(/opt/homebrew/include)
+    link_directories(/opt/homebrew/lib)
+endif()
