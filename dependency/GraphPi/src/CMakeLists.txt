@@ -7,8 +7,8 @@ SET(GraphMiningSrc
         schedule.cpp
         vertex_set.cpp
         motif_generator.cpp
-        graphmpi.cpp
-        common.cpp
+        # graphmpi.cpp
+        # common.cpp
         disjoint_set_union.cpp
         )
 

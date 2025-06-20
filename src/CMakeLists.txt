@@ -11,9 +11,9 @@ add_library(common STATIC
 add_executable(prep prep.cpp)
 target_link_libraries(prep PRIVATE preprocess common)
 
-# benchmark executable
-add_executable(runner runner.cpp)
-target_link_libraries(runner PRIVATE common plan)
+# benchmark executable -> Commenting this out needs missing Graph::pattern_matching
+# add_executable(runner runner.cpp)
+# target_link_libraries(runner PRIVATE common plan)
 
 # profiling executable
 add_executable(prof_runner prof_runner.cpp)

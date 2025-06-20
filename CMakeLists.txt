@@ -6,41 +6,52 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # macOS specific settings
 if(APPLE)
+    # Use system clang with libc++
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
-    # Use Homebrew's LLVM OpenMP
-    set(OpenMP_ROOT /opt/homebrew/opt/libomp)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Xpreprocessor -fopenmp")
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lomp")
+
+    # OpenMP support for macOS
+    if(EXISTS "/usr/local/opt/libomp")
+        # Intel Mac path
+        set(OpenMP_ROOT /usr/local/opt/libomp)
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Xpreprocessor -fopenmp")
+        set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L/usr/local/opt/libomp/lib -lomp")
+        include_directories(/usr/local/opt/libomp/include)
+    elseif(EXISTS "/opt/homebrew/opt/libomp")
+        # Apple Silicon path
+        set(OpenMP_ROOT /opt/homebrew/opt/libomp)
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Xpreprocessor -fopenmp")
+        set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L/opt/homebrew/opt/libomp/lib -lomp")
+        include_directories(/opt/homebrew/opt/libomp/include)
+    endif()
 endif()
 
 # Find packages
-find_package(OpenMP REQUIRED)
 find_package(TBB REQUIRED)
-find_package(MPI REQUIRED)
 
-# Add fmt library (install via brew install fmt or use FetchContent)
-find_package(fmt QUIET)
-if(NOT fmt_FOUND)
-    include(FetchContent)
-    FetchContent_Declare(
-        fmt
-        GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-        GIT_TAG 9.1.0
-    )
-    FetchContent_MakeAvailable(fmt)
+# Try to find OpenMP, but don't fail if not found
+find_package(OpenMP QUIET)
+if(OpenMP_CXX_FOUND)
+    message(STATUS "OpenMP found")
+else()
+    message(WARNING "OpenMP not found, using manual configuration")
 endif()
+
+# Add fmt library via FetchContent (safer than relying on system)
+include(FetchContent)
+FetchContent_Declare(
+    fmt
+    GIT_REPOSITORY https://github.com/fmtlib/fmt.git
+    GIT_TAG 9.1.0
+)
+FetchContent_MakeAvailable(fmt)
 
 # Add cxxopts for command line parsing
-find_package(cxxopts QUIET)
-if(NOT cxxopts_FOUND)
-    include(FetchContent)
-    FetchContent_Declare(
-        cxxopts
-        GIT_REPOSITORY https://github.com/jarro2783/cxxopts.git
-        GIT_TAG v3.1.1
-    )
-    FetchContent_MakeAvailable(cxxopts)
-endif()
+FetchContent_Declare(
+    cxxopts
+    GIT_REPOSITORY https://github.com/jarro2783/cxxopts.git
+    GIT_TAG v3.1.1
+)
+FetchContent_MakeAvailable(cxxopts)
 
 # Include directories
 include_directories(include)
@@ -67,9 +78,12 @@ file(MAKE_DIRECTORY ${PROJECT_PROFILE_DIR})
 add_subdirectory(dependency/GraphPi)
 add_subdirectory(src)
 
-# Install dependencies for macOS
+# Platform-specific linking
 if(APPLE)
-    # Add Homebrew paths
-    include_directories(/opt/homebrew/include)
-    link_directories(/opt/homebrew/lib)
+    if(EXISTS "/usr/local/lib")
+        link_directories(/usr/local/lib)
+    endif()
+    if(EXISTS "/opt/homebrew/lib")
+        link_directories(/opt/homebrew/lib)
+    endif()
 endif()
