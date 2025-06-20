@@ -1,6 +1,6 @@
 SET(GraphMiningSrc
         TestClass.cpp
-        # graph.cpp - needs MPI that's causign the errors
+        graph.cpp
         dataloader.cpp
         pattern.cpp
         prefix.cpp
