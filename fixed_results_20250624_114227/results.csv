@@ -1,0 +1,4 @@
+Dataset,Pattern,Threads,Execution_Time,Result_Count,Success
+wiki,triangle,1,FAILED,FAILED,FAILED
+wiki,triangle,2,FAILED,FAILED,FAILED
+wiki,triangle,4,FAILED,FAILED,FAILED
