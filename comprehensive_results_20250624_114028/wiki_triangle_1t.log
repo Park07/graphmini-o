@@ -1,0 +1,7 @@
+PATTERN_SIZE=3
+ADJ_MATRIX=011 101 110 
+RESTRICTS=(0,1)(1,2)
+SCHEDULING_TIME(s)=0.00463838
+ParallelType=NestedRT
+Code is written to: "/Users/williampark/GraphMini/src/codegen_output/plan.cpp"
+CODE_GENERATION_TIME(s)=0.00586779

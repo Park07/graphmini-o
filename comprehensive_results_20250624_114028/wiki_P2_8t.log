@@ -1,0 +1,10 @@
+PATTERN_SIZE=5
+ADJ_MATRIX=01111 10111 11000 11000 11000 
+RESTRICTS=(0,1)(2,3)(3,4)
+IEP Number	3
+IEP Redundency	0
+IEP Val	1 -1 -1 -1 2 
+IEP Group	[(0),(1),(2)] | [(0 2),(1)] | [(0),(1 2)] | [(0 1),(2)] | [(0 1 2)] | SCHEDULING_TIME(s)=0.002197
+ParallelType=NestedRT
+Code is written to: "/Users/williampark/GraphMini/src/codegen_output/plan.cpp"
+CODE_GENERATION_TIME(s)=0.00306717
