@@ -1,0 +1,9 @@
+Branch,Dataset,Pattern,Threads,Result_Count,Execution_Time,Success
+modified,wiki,triangle,1,4514137,0.34951,SUCCESS
+modified,wiki,triangle,2,4514137,0.378319,SUCCESS
+modified,wiki,triangle,4,4514137,0.263593,SUCCESS
+modified,wiki,triangle,8,4514137,0.569787,SUCCESS
+modified,enron,triangle,1,5809356,0.425567,SUCCESS
+modified,enron,triangle,2,5809356,0.575977,SUCCESS
+modified,enron,triangle,4,5809356,0.763819,SUCCESS
+modified,enron,triangle,8,5809356,0.473258,SUCCESS
