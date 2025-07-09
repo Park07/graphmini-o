@@ -23,8 +23,8 @@ PATTERNS=(
 
 # Thread scaling
 THREAD_COUNTS=(1 2 4 8 16)
-
-RESULTS_DIR="../unified_results_corrected_$(date +%Y%m%d_%H%M%S)"
+BRANCH_NAME=$(git branch --show-current)
+RESULTS_DIR="../unified_results_${BRANCH_NAME}_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR"
 
 echo "=== Test Configuration ==="
