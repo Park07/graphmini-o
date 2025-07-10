@@ -11,7 +11,7 @@ PATTERNS=(
     # Basic patterns
     "triangle 011101110 triangle-3nodes"
     "4path 0110100110100110 path-4nodes"
-    "4cycle 0110100110100110 cycle-4nodes"
+    "4cycle 0111101110011110 cycle-4nodes"
     "4star 0111100010001000 star-4nodes"
     "4clique 0111101111011110 clique-4nodes"
 
@@ -80,9 +80,7 @@ for dataset in "${DATASETS[@]}"; do
             # Generate code for this pattern
             ./bin/run "$dataset" "../dataset/GraphMini/$dataset" "$pattern_name" "$pattern_binary" 0 4 3 > /dev/null 2>&1
 
-
             # Execute with memory monitoring
-
             log_file="$RESULTS_DIR/${dataset}_${pattern_name}_${threads}t.log"
             /usr/bin/time -l ./bin/runner 1 "../dataset/GraphMini/$dataset" > "$log_file" 2>&1
             exit_code=$?
