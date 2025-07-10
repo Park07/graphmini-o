@@ -1,0 +1,1 @@
+/usr/bin/c++  -stdlib=libc++ -Xpreprocessor -fopenmp  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -L/opt/homebrew/opt/libomp/lib -lomp  CMakeFiles/cmTC_47a12.dir/OpenMPTryFlag.cpp.o -o cmTC_47a12  /opt/homebrew/opt/libomp/lib/libomp.dylib
