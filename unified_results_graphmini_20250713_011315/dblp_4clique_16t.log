@@ -1,0 +1,25 @@
+Threads=8
+LoadTime(s)=0.00887925
+CODE_EXECUTION_TIME(s)=0.632409
+RESULT=16713192
+Throughput=2.64278e+07
+VertexSetAllocated=0.00 Bytes
+MiniGraphAllocated=528.60 KB
+        0.93 real         1.85 user         0.04 sys
+            20217856  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1339  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                7910  involuntary context switches
+          8148192795  instructions retired
+          4084463071  cycles elapsed
+            19137280  peak memory footprint
