@@ -29,6 +29,8 @@
 #include <condition_variable>
 #include <cstdlib> // Required for getenv()
 #include <omp.h>   // Required for OpenMP functions
+#include "tbb/global_control.h"
+
 using namespace std::chrono_literals;
 namespace minigraph {
     template<typename T>
