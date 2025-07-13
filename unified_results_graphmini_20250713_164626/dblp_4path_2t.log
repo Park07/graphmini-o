@@ -1,0 +1,22 @@
+Threads=2
+LoadTime(s)=0.013398
+libc++abi: terminating with uncaught exception of type std::out_of_range: vector
+time: command terminated abnormally
+        0.41 real         0.00 user         0.01 sys
+            19955712  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1309  page reclaims
+                   5  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 177  involuntary context switches
+            68320068  instructions retired
+            37781320  cycles elapsed
+            18547456  peak memory footprint
