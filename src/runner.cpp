@@ -150,6 +150,8 @@ int main(int argc, char *argv[]){
     if (nthreads_env != NULL) {
         num_threads = std::stoi(nthreads_env);
     }
+    tbb::global_control c(tbb::global_control::max_allowed_parallelism, num_threads);
+
     omp_set_num_threads(num_threads); // Set the number of threads for OpenMP
     LOG(MSG) << "Threads=" << num_threads; // Log the correct number of threads
 
