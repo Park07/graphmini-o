@@ -17,8 +17,9 @@ PATTERNS=(
 
     # Complex patterns
     "5clique 0111110111110111110111110 clique-5nodes"
-    "house 0111110001111100001000 house-5nodes"
-    "diamond 011110110001100001000000 diamond-6nodes"
+    "house 0111010101110001000101010 house-5nodes"
+    "diamond 0111101111011110 diamond-4nodes"
+
 )
 
 # Thread scaling
@@ -78,7 +79,7 @@ for dataset in "${DATASETS[@]}"; do
             export OMP_NUM_THREADS=$threads
 
             # Generate code for this pattern
-            ./bin/run "$dataset" "../dataset/GraphMini/$dataset" "$pattern_name" "$pattern_binary" 0 4 3 
+            ./bin/run "$dataset" "../dataset/GraphMini/$dataset" "$pattern_name" "$pattern_binary" 0 4 3
 
             # Execute with memory monitoring
             log_file="$RESULTS_DIR/${dataset}_${pattern_name}_${threads}t.log"
