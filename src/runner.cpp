@@ -27,6 +27,8 @@
 #include <mutex>
 #include <math.h>
 #include <condition_variable>
+#include <cstdlib> // Required for getenv()
+#include <omp.h>   // Required for OpenMP functions
 using namespace std::chrono_literals;
 namespace minigraph {
     template<typename T>
@@ -142,13 +144,21 @@ int main(int argc, char *argv[]){
     int expId = std::stoi(argv[1]);
     std::string in_dir{argv[2]};
     Timer t;
-    const int processor_count = std::thread::hardware_concurrency();
-    LOG(MSG) << "Threads=" << processor_count;
+
+    int num_threads = 1; // Default to 1 thread
+    const char* nthreads_env = getenv("OMP_NUM_THREADS");
+    if (nthreads_env != NULL) {
+        num_threads = std::stoi(nthreads_env);
+    }
+    omp_set_num_threads(num_threads); // Set the number of threads for OpenMP
+    LOG(MSG) << "Threads=" << num_threads; // Log the correct number of threads
+
+
     GraphType *graph = load_bin(in_dir, false);
     LOG(MSG) << "LoadTime(s)=" << t.Passed();
     bool time_out = false;
     double seconds = 24 * 3600;
-    Context ctx(processor_count);
+    Context ctx(num_threads);
 
     RunnerLog log;
     long long result{0};
@@ -159,7 +169,8 @@ int main(int argc, char *argv[]){
             log.finished = false;
             log.expId = expId;
             log.result = result;
-            log.numThread = processor_count;
+
+            log.numThread = num_threads;
             log.vertexAllocated = VertexSetType::TOTAL_ALLOCATED;
             log.miniGraphAllocated = VertexSetType ::TOTAL_ALLOCATED;
             log.threadTimeSTD = 0.0;
@@ -183,7 +194,8 @@ int main(int argc, char *argv[]){
         log.finished = false;
         log.expId = expId;
         log.result = result;
-        log.numThread = processor_count;
+
+        log.numThread = num_threads;
         log.vertexAllocated = VertexSetType::TOTAL_ALLOCATED;
         log.miniGraphAllocated = VertexSetType ::TOTAL_ALLOCATED;
         log.runTime = seconds;
@@ -204,7 +216,8 @@ int main(int argc, char *argv[]){
         log.finished = true;
         log.expId = expId;
         log.result = result;
-        log.numThread = processor_count;
+        // manually switched from from processor_count -> num_threads
+        log.numThread = num_threads;
         log.vertexAllocated = VertexSetType::TOTAL_ALLOCATED;
         log.miniGraphAllocated = MiniGraphPool::TOTAL_ALLOCATED;
         log.runTime = seconds;
