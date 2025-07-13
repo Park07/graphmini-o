@@ -78,7 +78,7 @@ for dataset in "${DATASETS[@]}"; do
             export OMP_NUM_THREADS=$threads
 
             # Generate code for this pattern
-            ./bin/run "$dataset" "../dataset/GraphMini/$dataset" "$pattern_name" "$pattern_binary" 0 4 3 > /dev/null 2>&1
+            ./bin/run "$dataset" "../dataset/GraphMini/$dataset" "$pattern_name" "$pattern_binary" 0 4 3 
 
             # Execute with memory monitoring
             log_file="$RESULTS_DIR/${dataset}_${pattern_name}_${threads}t.log"
