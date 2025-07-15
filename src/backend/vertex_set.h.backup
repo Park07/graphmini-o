@@ -1,4 +1,3 @@
-
 //
 // Created by ubuntu on 2/2/23.
 //
@@ -10,10 +9,10 @@
 #include <cassert>
 #include <cstddef>
 #include <atomic>
-#include <mutex>  // ADD THIS
 
 namespace minigraph {
-    using IdType = uint32_t;
+    using IdType = uint32_t;    // support up to 4-billion number of vertexes (2^64-1 edges)
+//    using IdType = uint64_t; // support up to 2^64-1 number of vertexes (2^64-1 edges)
     constexpr IdType INVALID_ID = static_cast<IdType>(-1);
 
     class VertexSet {
@@ -27,13 +26,10 @@ namespace minigraph {
         private:
             std::vector<IdType *> buffer_exist;
             std::vector<IdType *> buffer_avail;
-            mutable std::mutex pool_mutex;  // ADD THIS - Critical fix!
-
         public:
             VertexSetPool() = default;
 
             ~VertexSetPool() {
-                std::lock_guard<std::mutex> lock(pool_mutex);  // ADD THIS
                 for (IdType *_data: buffer_exist) {
                     delete[] _data;
                 }
@@ -45,8 +41,6 @@ namespace minigraph {
             };
 
             IdType *AllocateWorkSpace() {
-                std::lock_guard<std::mutex> lock(pool_mutex);  // ADD THIS - Critical fix!
-
                 if (buffer_avail.empty()) {
                     IdType *_data = new IdType[MAX_DEGREE + 1];
                     buffer_exist.push_back(_data);
@@ -59,9 +53,6 @@ namespace minigraph {
             };
 
             void FreeWorkSpace(IdType *_data) {
-                if (_data == nullptr) return;  // ADD THIS - Null check
-
-                std::lock_guard<std::mutex> lock(pool_mutex);  // ADD THIS - Critical fix!
                 buffer_avail.push_back(_data);
             };
         };
@@ -69,24 +60,19 @@ namespace minigraph {
     public:
         inline static uint64_t MAX_DEGREE{0};
         inline static std::atomic_uint64_t TOTAL_ALLOCATED{0};
-
         VertexSet() = default;
 
-        // FIXED: Constructor parameters
         VertexSet(IdType _vid, IdType *_data, uint64_t _size) :
                 m_data{_data}, m_vid{_vid},
                 m_size{_size}, m_pooled{false} {};
 
+        // TODO add fine grained buffer management
         VertexSet(size_t capacity) : m_pooled{true} {
             m_data = static_cast<IdType *>(VertexSetPool::Get().AllocateWorkSpace());
         };
 
-        // FIXED: Destructor with proper cleanup
         ~VertexSet() {
-            if (m_pooled && m_data != nullptr) {
-                VertexSetPool::Get().FreeWorkSpace(m_data);
-                m_data = nullptr;  // ADD THIS - Prevent double-free
-            }
+            if (m_pooled) VertexSetPool::Get().FreeWorkSpace(m_data);
         };
 
         void swap(VertexSet &other) noexcept {
@@ -96,6 +82,7 @@ namespace minigraph {
             std::swap(m_vid, other.m_vid);
         };
 
+        // reference to src / pointer copy
         VertexSet(const VertexSet &src) {
             m_data = src.m_data;
             m_size = src.m_size;
@@ -103,6 +90,7 @@ namespace minigraph {
             m_pooled = false;
         };
 
+        // reference to src / pointer copy
         VertexSet &operator=(const VertexSet &src) {
             if (&src != this) {
                 VertexSet tmp{src};
@@ -135,8 +123,8 @@ namespace minigraph {
             assert(i < m_size);
             return m_data[i];
         };
-        void set_size(size_t _size) { m_size = _size; };
 
+        void set_size(size_t _size) {m_size = _size;};
 
         inline VertexSet intersect(const VertexSet &other, IdType upper) const;
         inline VertexSet intersect(const VertexSet &other) const;
