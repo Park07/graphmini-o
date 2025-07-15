@@ -79,13 +79,13 @@ for dataset in "${DATASETS[@]}"; do
             export OMP_NUM_THREADS=$threads
 
             # Generate code for this pattern
-            ./bin/run "$dataset" "../dataset/GraphMini/$dataset" "$pattern_name" "$pattern_binary" 0 4 3 > 2/dev/null
+            ./bin/run "$dataset" "../dataset/GraphMini/$dataset" "$pattern_name" "$pattern_binary" 0 4 3 
 
             # Execute with memory monitoring
             log_file="$RESULTS_DIR/${dataset}_${pattern_name}_${threads}t.log"
             /usr/bin/time -l ./bin/runner 1 "../dataset/GraphMini/$dataset" > "$log_file" 2>&1
             exit_code=$?
-        
+
             # Parse GraphMini results
             load_time=$(grep "LoadTime" "$log_file" | grep -o '[0-9]*\.[0-9]*' | head -1)
             exec_time=$(grep "CODE_EXECUTION_TIME" "$log_file" | grep -o '[0-9]*\.[0-9]*' | head -1)
