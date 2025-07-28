@@ -56,7 +56,7 @@ public:
        * In-Edges: 0 Restricts: 0 */
       m0.build(s0, s0, s0);
       // skip building indices for m0 because they can be obtained directly
-      if (s0.size() > 4 * 6) {
+      if (s0.size() > std::min(4 * 17, 100)) {
         tbb::parallel_for(tbb::blocked_range<size_t>(0, s0.size(), 1),
                           Loop1(ctx, s0, m0), tbb::auto_partitioner());
         continue;
