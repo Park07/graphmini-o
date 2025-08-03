@@ -1,0 +1,5 @@
+Dataset,PatternCategory,QueryFile,QueryVertices,QueryEdges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_Peak_MB,Status,Notes
+wiki,simple_patterns,path.graph,4,3,1,0.0100751,31.3148,1048807458,4096.0,SUCCESS,
+wiki,simple_patterns,path.graph,4,3,2,0.00924146,15.5146,1048807458,4304.0,SUCCESS,
+wiki,simple_patterns,triangle.graph,3,3,1,0.00955629,0.114229,608389,4064.0,SUCCESS,
+wiki,simple_patterns,triangle.graph,3,3,2,0.00195346,0.0619588,608389,4128.0,SUCCESS,

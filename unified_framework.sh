@@ -11,14 +11,8 @@ TIMEOUT=900 # 15 minutes
 NUM_QUERIES_PER_CATEGORY=5
 
 # --- PATTERN DEFINITIONS ---
-PATTERN_CATEGORIES=(
-    "small_sparse;8;6"     # 8 vertices, min 6 edges
-    "small_dense;8;12"     # 8 vertices, min 12 edges
-    "medium_sparse;16;20"  # 16 vertices, min 20 edges
-    "medium_dense;16;40"   # 16 vertices, min 40 edges
-    "large_sparse;24;30"   # 24 vertices, min 30 edges
-    "large_dense;24;60"    # 24 vertices, min 60 edges
-)
+PATTERN_CATEGORIES=("simple_patterns;3;3")
+
 
 # --- SETUP ---
 PROJECT_ROOT="/Users/williampark/graphmini"
@@ -48,7 +42,7 @@ for dataset in "${DATASETS[@]}"; do
         mkdir -p "$query_dir"
         if [ -z "$(ls -A ${query_dir} 2>/dev/null)" ]; then
             echo "Generating ${NUM_QUERIES_PER_CATEGORY} queries for ${dataset} -> ${category_name}..."
-            ./generate_queries "$dataset_file_path" "$NUM_QUERIES_PER_CATEGORY" "$target_vertices" "$min_edges" "$query_dir"
+echo "Skipping pattern generation"
         else
             echo "Queries for ${dataset} -> ${category_name} already exist. Skipping."
         fi
