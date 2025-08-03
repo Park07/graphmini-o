@@ -1,0 +1,11 @@
+Dataset,PatternCategory,QueryFile,QueryVertices,QueryEdges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_Peak_MB,Status,Notes
+wiki,small_sparse,tree.graph,8,7,1,0.0126546,0.112077,608389,4080.0,SUCCESS,
+wiki,small_sparse,tree.graph,8,7,2,0.0125296,0.0786432,608389,4352.0,SUCCESS,
+wiki,small_sparse,tree.graph,8,7,4,0.00839088,0.0291999,608389,4240.0,SUCCESS,
+wiki,small_sparse,tree.graph,8,7,8,0.00832113,0.0177535,608389,4592.0,SUCCESS,
+wiki,small_sparse,tree.graph,8,7,16,0.00924742,0.0290783,608389,4704.0,SUCCESS,
+wiki,small_dense,square.graph,4,4,1,0.00135337,7.78418,23343657,4000.0,SUCCESS,
+wiki,small_dense,square.graph,4,4,2,0.00106996,5.3932,23343657,4144.0,SUCCESS,
+wiki,small_dense,square.graph,4,4,4,0.00125004,3.34011,23343657,4480.0,SUCCESS,
+wiki,small_dense,square.graph,4,4,8,0.00123992,2.10675,23343657,5136.0,SUCCESS,
+wiki,small_dense,square.graph,4,4,16,0.00123167,2.26111,23343657,5056.0,SUCCESS,

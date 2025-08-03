@@ -11,9 +11,14 @@ TIMEOUT=900 # 15 minutes
 NUM_QUERIES_PER_CATEGORY=5
 
 # --- PATTERN DEFINITIONS ---
-PATTERN_CATEGORIES=("simple_patterns;3;3")
-
-
+PATTERN_CATEGORIES=(
+    "simple_patterns;4;4"      # Your working simple patterns (fast)
+    "small_dense;4;4"          # Your working square pattern (medium)
+    "medium_sparse;16;24"      # HKU patterns (research-grade)
+    "medium_dense;16;24"       # HKU patterns (research-grade)
+    "large_sparse;16;24"       # HKU patterns (research-grade)
+    "large_dense;16;24"        # HKU patterns (research-grade)
+)
 # --- SETUP ---
 PROJECT_ROOT="/Users/williampark/graphmini"
 cd "$PROJECT_ROOT" || { echo "ERROR: Could not cd to project root '$PROJECT_ROOT'. Exiting."; exit 1; }
