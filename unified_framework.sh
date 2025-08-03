@@ -37,7 +37,7 @@ echo "========================================="
 echo "PHASE 1: CHECKING/GENERATING QUERY GRAPHS"
 echo "========================================="
 for dataset in "${DATASETS[@]}"; do
-    dataset_file_path="${PROJECT_ROOT}/dataset/graphmini/${dataset}/snap.txt"
+    dataset_file_path="${PROJECT_ROOT}/dataset/GraphMini/${dataset}/snap.txt"
     if [ ! -f "$dataset_file_path" ]; then
         echo "Warning: snap.txt not found for '$dataset' at '$dataset_file_path'. Skipping query generation."
         continue
@@ -106,7 +106,7 @@ test_count=0
 cd "${PROJECT_ROOT}/build" || { echo "ERROR: Could not cd to build directory. Exiting."; exit 1; }
 
 for dataset in "${DATASETS[@]}"; do
-    dataset_runner_path="../dataset/graphmini/${dataset}"
+    dataset_runner_path="../dataset/GraphMini/${dataset}"
     for category_info in "${PATTERN_CATEGORIES[@]}"; do
         IFS=';' read -r category_name _ _ <<< "$category_info"
         query_dir="../queries/${dataset}/${category_name}"
