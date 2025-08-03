@@ -12,3 +12,5 @@ dataset_backup_openmp/
 *.log
 comparison_report_*.txt
 experiment_*.log
+.DS_Store
+.DS_Store
