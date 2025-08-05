@@ -31,8 +31,8 @@ if [ ! -f "run_with_timeout.py" ] || [ ! -f "query_to_binary.py" ]; then
     echo "ERROR: Missing helper scripts 'run_with_timeout.py' or 'query_to_binary.py' in project root."
     exit 1
 fi
-if [ ! -d "build" ]; then
-    echo "ERROR: 'build' directory not found. Please compile the project first."
+if [ ! -d "build/bin" ]; then
+    echo "ERROR: 'build/bin' directory not found. Please compile the project first."
     exit 1
 fi
 
