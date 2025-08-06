@@ -1,3 +1,4 @@
+# /Users/williampark/graphmini-o/dependency/GraphPi/tianhe/CMakeLists.txt
 ADD_EXECUTABLE(baseline_test baseline_test.cpp)
 target_link_libraries(baseline_test PRIVATE graph_mining)
 

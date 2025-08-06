@@ -1,0 +1,2 @@
+Dataset,Category,Query,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result,Status,Timeout_Used
+wiki,small_sparse,query_sparse_8_1,8,11,1,0,0,0,CODEGEN_TIMEOUT,600

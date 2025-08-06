@@ -1,0 +1,2 @@
+=== Completion Rates by Category ===
+small_sparse        :   0.0% (0/1 completed)

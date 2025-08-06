@@ -1,0 +1,712 @@
+Results directory: /Users/williampark/graphmini-o/debug_results_20250807_035350
+
+Starting benchmark tests...
+
+########################################
+DATASET: wiki
+########################################
+
+Category: small_sparse
+[INFO] Found      200 queries in small_sparse
+
+>>> Test 1: query_sparse_8_1.graph with 1 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_1_1t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_1 (8 vertices, 11 edges)
+[INFO] Threads: 1, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:50 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_1.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111110010100010110010001000010010100100100110000100000100000010
+[DEBUG] Binary string length: 233 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_1 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_1.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111110010100010110010001000010010100100100110000100000100000010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_1_1t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 1, Success: 0, Timeout: 0, Failed: 1
+
+>>> Test 2: query_sparse_8_1.graph with 2 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_1_2t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_1 (8 vertices, 11 edges)
+[INFO] Threads: 2, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:52 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_1.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111110010100010110010001000010010100100100110000100000100000010
+[DEBUG] Binary string length: 233 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_1 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_1.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111110010100010110010001000010010100100100110000100000100000010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_1_2t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 2, Success: 0, Timeout: 0, Failed: 2
+
+>>> Test 3: query_sparse_8_1.graph with 4 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_1_4t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_1 (8 vertices, 11 edges)
+[INFO] Threads: 4, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:52 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_1.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111110010100010110010001000010010100100100110000100000100000010
+[DEBUG] Binary string length: 233 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_1 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_1.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111110010100010110010001000010010100100100110000100000100000010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_1_4t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 3, Success: 0, Timeout: 0, Failed: 3
+
+>>> Test 4: query_sparse_8_1.graph with 8 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_1_8t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_1 (8 vertices, 11 edges)
+[INFO] Threads: 8, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:52 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_1.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111110010100010110010001000010010100100100110000100000100000010
+[DEBUG] Binary string length: 233 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_1 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_1.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111110010100010110010001000010010100100100110000100000100000010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_1_8t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 4, Success: 0, Timeout: 0, Failed: 4
+
+>>> Test 5: query_sparse_8_10.graph with 1 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_10_1t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_10 (8 vertices, 11 edges)
+[INFO] Threads: 1, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:52 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_10.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0101000010001011000100001010000001000111000010110100110001001100
+[DEBUG] Binary string length: 234 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_10 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_10.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0101000010001011000100001010000001000111000010110100110001001100 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_10_1t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 5, Success: 0, Timeout: 0, Failed: 5
+
+>>> Test 6: query_sparse_8_10.graph with 2 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_10_2t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_10 (8 vertices, 11 edges)
+[INFO] Threads: 2, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:53 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_10.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0101000010001011000100001010000001000111000010110100110001001100
+[DEBUG] Binary string length: 234 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_10 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_10.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0101000010001011000100001010000001000111000010110100110001001100 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_10_2t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 6, Success: 0, Timeout: 0, Failed: 6
+
+>>> Test 7: query_sparse_8_10.graph with 4 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_10_4t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_10 (8 vertices, 11 edges)
+[INFO] Threads: 4, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:53 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_10.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0101000010001011000100001010000001000111000010110100110001001100
+[DEBUG] Binary string length: 234 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_10 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_10.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0101000010001011000100001010000001000111000010110100110001001100 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_10_4t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 7, Success: 0, Timeout: 0, Failed: 7
+
+>>> Test 8: query_sparse_8_10.graph with 8 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_10_8t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_10 (8 vertices, 11 edges)
+[INFO] Threads: 8, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:53 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_10.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0101000010001011000100001010000001000111000010110100110001001100
+[DEBUG] Binary string length: 234 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_10 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_10.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0101000010001011000100001010000001000111000010110100110001001100 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_10_8t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 8, Success: 0, Timeout: 0, Failed: 8
+
+>>> Test 9: query_sparse_8_100.graph with 1 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_100_1t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_100 (8 vertices, 11 edges)
+[INFO] Threads: 1, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:53 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_100.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010101100010111000010000001100100011010110000010100000110
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_100 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_100.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010101100010111000010000001100100011010110000010100000110 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_100_1t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 9, Success: 0, Timeout: 0, Failed: 9
+
+>>> Test 10: query_sparse_8_100.graph with 2 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_100_2t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_100 (8 vertices, 11 edges)
+[INFO] Threads: 2, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:53 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_100.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010101100010111000010000001100100011010110000010100000110
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_100 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_100.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010101100010111000010000001100100011010110000010100000110 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_100_2t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 10, Success: 0, Timeout: 0, Failed: 10
+
+>>> Test 11: query_sparse_8_100.graph with 4 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_100_4t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_100 (8 vertices, 11 edges)
+[INFO] Threads: 4, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:53 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_100.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010101100010111000010000001100100011010110000010100000110
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_100 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_100.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010101100010111000010000001100100011010110000010100000110 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_100_4t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 11, Success: 0, Timeout: 0, Failed: 11
+
+>>> Test 12: query_sparse_8_100.graph with 8 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_100_8t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_100 (8 vertices, 11 edges)
+[INFO] Threads: 8, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:54 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_100.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010101100010111000010000001100100011010110000010100000110
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_100 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_100.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010101100010111000010000001100100011010110000010100000110 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_100_8t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 12, Success: 0, Timeout: 0, Failed: 12
+
+>>> Test 13: query_sparse_8_101.graph with 1 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_101_1t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_101 (8 vertices, 11 edges)
+[INFO] Threads: 1, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:54 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_101.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0110110010001000100110010010100011110100100010000000000100100010
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_101 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_101.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0110110010001000100110010010100011110100100010000000000100100010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_101_1t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 13, Success: 0, Timeout: 0, Failed: 13
+
+>>> Test 14: query_sparse_8_101.graph with 2 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_101_2t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_101 (8 vertices, 11 edges)
+[INFO] Threads: 2, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:54 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_101.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0110110010001000100110010010100011110100100010000000000100100010
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_101 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_101.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0110110010001000100110010010100011110100100010000000000100100010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_101_2t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 14, Success: 0, Timeout: 0, Failed: 14
+
+>>> Test 15: query_sparse_8_101.graph with 4 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_101_4t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_101 (8 vertices, 11 edges)
+[INFO] Threads: 4, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:54 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_101.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0110110010001000100110010010100011110100100010000000000100100010
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_101 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_101.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0110110010001000100110010010100011110100100010000000000100100010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_101_4t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 15, Success: 0, Timeout: 0, Failed: 15
+
+>>> Test 16: query_sparse_8_101.graph with 8 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_101_8t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_101 (8 vertices, 11 edges)
+[INFO] Threads: 8, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:54 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_101.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0110110010001000100110010010100011110100100010000000000100100010
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_101 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_101.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0110110010001000100110010010100011110100100010000000000100100010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_101_8t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 16, Success: 0, Timeout: 0, Failed: 16
+
+>>> Test 17: query_sparse_8_102.graph with 1 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_102_1t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_102 (8 vertices, 11 edges)
+[INFO] Threads: 1, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:54 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_102.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111000010110000110101111110000000000010001000100010110000100000
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_102 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_102.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111000010110000110101111110000000000010001000100010110000100000 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_102_1t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 17, Success: 0, Timeout: 0, Failed: 17
+
+>>> Test 18: query_sparse_8_102.graph with 2 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_102_2t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_102 (8 vertices, 11 edges)
+[INFO] Threads: 2, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:55 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_102.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111000010110000110101111110000000000010001000100010110000100000
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_102 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_102.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111000010110000110101111110000000000010001000100010110000100000 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_102_2t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 18, Success: 0, Timeout: 0, Failed: 18
+
+>>> Test 19: query_sparse_8_102.graph with 4 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_102_4t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_102 (8 vertices, 11 edges)
+[INFO] Threads: 4, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:55 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_102.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111000010110000110101111110000000000010001000100010110000100000
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_102 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_102.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111000010110000110101111110000000000010001000100010110000100000 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_102_4t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 19, Success: 0, Timeout: 0, Failed: 19
+
+>>> Test 20: query_sparse_8_102.graph with 8 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_102_8t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_102 (8 vertices, 11 edges)
+[INFO] Threads: 8, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:55 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_102.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111000010110000110101111110000000000010001000100010110000100000
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_102 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_102.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0111000010110000110101111110000000000010001000100010110000100000 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_102_8t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 20, Success: 0, Timeout: 0, Failed: 20
+
+>>> Test 21: query_sparse_8_103.graph with 1 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_103_1t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_103 (8 vertices, 11 edges)
+[INFO] Threads: 1, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:55 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_103.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010111000010001110100100001010000001000110010010100100110
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_103 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_103.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010111000010001110100100001010000001000110010010100100110 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_103_1t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 21, Success: 0, Timeout: 0, Failed: 21
+
+>>> Test 22: query_sparse_8_103.graph with 2 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_103_2t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_103 (8 vertices, 11 edges)
+[INFO] Threads: 2, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:55 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_103.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010111000010001110100100001010000001000110010010100100110
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_103 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_103.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010111000010001110100100001010000001000110010010100100110 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_103_2t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 22, Success: 0, Timeout: 0, Failed: 22
+
+>>> Test 23: query_sparse_8_103.graph with 4 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_103_4t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_103 (8 vertices, 11 edges)
+[INFO] Threads: 4, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:55 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_103.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010111000010001110100100001010000001000110010010100100110
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_103 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_103.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010111000010001110100100001010000001000110010010100100110 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_103_4t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 23, Success: 0, Timeout: 0, Failed: 23
+
+>>> Test 24: query_sparse_8_103.graph with 8 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_103_8t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_103 (8 vertices, 11 edges)
+[INFO] Threads: 8, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:56 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_103.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010111000010001110100100001010000001000110010010100100110
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_103 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_103.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0100000010111000010001110100100001010000001000110010010100100110 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_103_8t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 24, Success: 0, Timeout: 0, Failed: 24
+
+>>> Test 25: query_sparse_8_104.graph with 1 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_104_1t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_104 (8 vertices, 11 edges)
+[INFO] Threads: 1, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:56 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_104.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0000000100111001010000110100010001000001000100100010010111101010
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_104 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_104.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0000000100111001010000110100010001000001000100100010010111101010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_104_1t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 25, Success: 0, Timeout: 0, Failed: 25
+
+>>> Test 26: query_sparse_8_104.graph with 2 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_104_2t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_104 (8 vertices, 11 edges)
+[INFO] Threads: 2, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:56 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_104.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0000000100111001010000110100010001000001000100100010010111101010
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_104 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_104.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0000000100111001010000110100010001000001000100100010010111101010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_104_2t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 26, Success: 0, Timeout: 0, Failed: 26
+
+>>> Test 27: query_sparse_8_104.graph with 4 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_104_4t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_104 (8 vertices, 11 edges)
+[INFO] Threads: 4, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:56 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_104.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0000000100111001010000110100010001000001000100100010010111101010
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_104 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_104.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0000000100111001010000110100010001000001000100100010010111101010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_104_4t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 27, Success: 0, Timeout: 0, Failed: 27
+
+>>> Test 28: query_sparse_8_104.graph with 8 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_104_8t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_104 (8 vertices, 11 edges)
+[INFO] Threads: 8, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:56 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_104.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0000000100111001010000110100010001000001000100100010010111101010
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_104 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_104.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0000000100111001010000110100010001000001000100100010010111101010 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_104_8t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 28, Success: 0, Timeout: 0, Failed: 28
+
+>>> Test 29: query_sparse_8_105.graph with 1 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_105_1t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_105 (8 vertices, 11 edges)
+[INFO] Threads: 1, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:56 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_105.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0011101000000110100110011010100010110000010000101100010000100000
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_105 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_105.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0011101000000110100110011010100010110000010000101100010000100000 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_105_1t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 29, Success: 0, Timeout: 0, Failed: 29
+
+>>> Test 30: query_sparse_8_105.graph with 2 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_105_2t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_105 (8 vertices, 11 edges)
+[INFO] Threads: 2, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:57 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_105.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0011101000000110100110011010100010110000010000101100010000100000
+[DEBUG] Binary string length: 235 (expected: 64)
+[DEBUG] First 100 chars of binary: [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_spa...
+[STEP 2/3] Generating GraphMini code...
+[COMMAND] ./build/bin/run wiki /Users/williampark/graphmini-o/dataset/GraphMini/wiki query_sparse_8_105 [DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_105.graph
+[DEBUG] Query has 8 vertices and 11 edges
+0011101000000110100110011010100010110000010000101100010000100000 0 4 3
+[ERROR] Code generation failed (exit code: 127)
+[ERROR] Check log: /Users/williampark/graphmini-o/debug_results_20250807_035350/wiki_small_sparse_query_sparse_8_105_2t_codegen.log
+./unified_framework.sh: line 139: timeout: command not found
+[STATS] Total: 30, Success: 0, Timeout: 0, Failed: 30
+
+>>> Test 31: query_sparse_8_105.graph with 4 threads
+
+================================================================
+[TEST] wiki_small_sparse_query_sparse_8_105_4t
+[INFO] Dataset: wiki, Category: small_sparse
+[INFO] Query: query_sparse_8_105 (8 vertices, 11 edges)
+[INFO] Threads: 4, Timeout: 300s
+[TIME] Start: Thu Aug  7 03:53:57 AEST 2025
+[STEP 1/3] Converting query format...
+[DEBUG] Converting HKU query to binary format: /Users/williampark/graphmini-o/queries/wiki/small_sparse/query_sparse_8_105.graph
+[DEBUG] Query has 8 vertices and 11 edges

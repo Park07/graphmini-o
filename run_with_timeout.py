@@ -1,28 +1,23 @@
 #!/usr/bin/env python3
-import sys
-import subprocess
+import sys, subprocess, signal, time
 
-def main():
-    if len(sys.argv) < 3:
-        print("Usage: python3 run_with_timeout.py <timeout_seconds> <command...>")
-        sys.exit(1)
+def run_with_timeout(timeout_seconds, *cmd_args):
     try:
-        timeout = int(sys.argv[1])
-    except ValueError:
-        sys.exit(1)
-    command = sys.argv[2:]
-    try:
-        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        stdout, stderr = process.communicate(timeout=timeout)
-        sys.stdout.buffer.write(stdout)
-        sys.stderr.buffer.write(stderr)
-        sys.exit(process.returncode)
+        proc = subprocess.Popen(cmd_args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        stdout, _ = proc.communicate(timeout=timeout_seconds)
+        print(stdout.decode(), end='')
+        return proc.returncode
     except subprocess.TimeoutExpired:
-        print(f"\n--- TIMEOUT: Command exceeded {timeout} seconds ---", file=sys.stderr)
-        process.kill()
-        sys.exit(124)
-    except Exception:
-        sys.exit(1)
+        proc.kill()
+        proc.communicate()
+        return 124  # Standard timeout exit code
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) < 3:
+        print("Usage: python3 run_with_timeout.py <timeout> <command> [args...]")
+        sys.exit(1)
+    
+    timeout = int(sys.argv[1])
+    cmd = sys.argv[2:]
+    exit_code = run_with_timeout(timeout, *cmd)
+    sys.exit(exit_code)
