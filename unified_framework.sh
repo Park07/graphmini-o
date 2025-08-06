@@ -6,7 +6,7 @@ echo "=== GraphMini-O Modern Benchmark Framework (DEBUG MODE) ==="
 PROJECT_ROOT="/Users/williampark/graphmini-o"
 DATASETS=("wiki" )
 THREAD_COUNTS=(1 4 8 16)
-TIMEOUT=900
+TIMEOUT=300
 
 PATTERN_CATEGORIES=(
     "small_sparse" "small_dense"
