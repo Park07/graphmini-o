@@ -49,6 +49,9 @@ for dataset in "${DATASETS[@]}"; do
                 log_file="$RESULTS_DIR/${dataset}_${category}_${test_name}_${threads}t.log"
                 echo -n "  $threads threads: "
 
+                # echo -n  "'${PROJECT_ROOT}/build/bin/run' '$dataset' '${PROJECT_ROOT}/dataset/GraphMini/${dataset}' '$test_name' '$pattern_binary' 0 4 3 > /dev/null 2>&1 &&"
+                # echo -n  "'${PROJECT_ROOT}/build/bin/runner' $threads '${PROJECT_ROOT}/dataset/GraphMini/${dataset}'"
+
                 # Use Python timeout for ENTIRE pipeline (code gen + execution)
                 python3 run_with_timeout.py $timeout_seconds bash -c "
                     export OMP_NUM_THREADS=$threads
@@ -56,7 +59,7 @@ for dataset in "${DATASETS[@]}"; do
                     '${PROJECT_ROOT}/build/bin/runner' $threads '${PROJECT_ROOT}/dataset/GraphMini/${dataset}'
                 " > "$log_file" 2>&1
 
-                exit_code=$?
+
 
                 if [ $exit_code -eq 0 ]; then
                     result_count=$(grep "RESULT=" "$log_file" | cut -d'=' -f2 | tail -1)

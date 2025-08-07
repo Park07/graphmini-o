@@ -1,0 +1,26 @@
+Dataset,PatternCategory,QueryFile,Threads,TotalTime_s,Status,Notes
+wiki,small_sparse,query_sparse_8_1,1,N/A,FAILED,Exit code 134
+wiki,small_sparse,query_sparse_8_1,2,N/A,FAILED,Exit code 134
+wiki,small_sparse,query_sparse_8_1,4,N/A,FAILED,Exit code 134
+wiki,small_sparse,query_sparse_8_10,1,N/A,FAILED,Exit code 1
+wiki,small_sparse,query_sparse_8_10,2,N/A,FAILED,Exit code 1
+wiki,small_sparse,query_sparse_8_10,4,N/A,FAILED,Exit code 1
+wiki,small_sparse,query_sparse_8_100,1,N/A,FAILED,Exit code 134
+wiki,small_sparse,query_sparse_8_100,2,N/A,FAILED,Exit code 134
+wiki,small_sparse,query_sparse_8_100,4,N/A,FAILED,Exit code 134
+wiki,medium_sparse,query_sparse_16_1,1,N/A,FAILED,Exit code 137
+wiki,medium_sparse,query_sparse_16_1,2,N/A,FAILED,Exit code 137
+wiki,medium_sparse,query_sparse_16_1,4,N/A,FAILED,Exit code 137
+wiki,medium_sparse,query_sparse_16_10,1,N/A,FAILED,Exit code 137
+wiki,medium_sparse,query_sparse_16_10,2,N/A,FAILED,Exit code 137
+wiki,medium_sparse,query_sparse_16_10,4,N/A,FAILED,Exit code 137
+wiki,medium_sparse,query_sparse_16_100,1,N/A,FAILED,Exit code 137
+wiki,medium_sparse,query_sparse_16_100,2,N/A,FAILED,Exit code 137
+wiki,medium_sparse,query_sparse_16_100,4,N/A,FAILED,Exit code 137
+wiki,large_sparse,query_sparse_32_1,1,N/A,FAILED,Exit code 137
+wiki,large_sparse,query_sparse_32_1,2,N/A,FAILED,Exit code 137
+wiki,large_sparse,query_sparse_32_1,4,N/A,FAILED,Exit code 137
+wiki,large_sparse,query_sparse_32_10,1,N/A,FAILED,Exit code 137
+wiki,large_sparse,query_sparse_32_10,2,N/A,FAILED,Exit code 137
+wiki,large_sparse,query_sparse_32_10,4,N/A,FAILED,Exit code 137
+wiki,large_sparse,query_sparse_32_100,1,N/A,FAILED,Exit code 137
