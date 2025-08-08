@@ -257,7 +257,7 @@ namespace minigraph {
         }
         for (auto &mg_op: out.mg_ops) {
             for (auto itr = mg_op.begin(); itr != mg_op.end(); itr++) {
-                if (!IndeedUsed.at(itr->id)) {
+                if (itr->id < IndeedUsed.size() && !IndeedUsed.at(itr->id)) {
                     itr = mg_op.erase(itr);  // erase returns next valid iterator
                 }
                 else {
