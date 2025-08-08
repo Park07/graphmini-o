@@ -20,12 +20,7 @@ namespace minigraph {
     bool EnableProfling = false;
     CodeGenConfig CurConfig;
 
-    inline int VEC_INDEX(int i, int j, int p_size) { 
-        if (i < 0 || j < 0 || i >= p_size || j >= p_size) { 
-            throw std::out_of_range("VEC_INDEX bounds: i=" + std::to_string(i) + " j=" + std::to_string(j) + " p_size=" + std::to_string(p_size)); 
-        } 
-        return i * p_size + j; 
-    };
+    inline int VEC_INDEX(int i, int j, int p_size) { return i * p_size + j; };
 
     inline std::string gen_indent(int dep) {
         return std::string(dep + 4, '\t');
