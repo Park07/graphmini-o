@@ -26,7 +26,6 @@ namespace minigraph {
         } 
         return i * p_size + j; 
     };
-
     inline std::string gen_indent(int dep) {
         return std::string(dep + 4, '\t');
     };
@@ -73,7 +72,12 @@ namespace minigraph {
     EdgeIR ToEdgeIR(const std::string &adj_mat, int vid) {
         if (vid == 0) return {};
         int p_size = get_pattern_size(adj_mat);
-        EdgeIR out;
+        if (adj_mat.size() != p_size * p_size) {
+            throw std::runtime_error("ToEdgeIR: adj_mat size mismatch");
+        }
+        if (vid >= p_size) {
+            throw std::out_of_range("ToEdgeIR: vid out of bounds");
+        }        EdgeIR out;
         for (int j = 0; j < p_size; j++) {
             out[j] = adj_mat.at(VEC_INDEX(vid, j, p_size)) == '1';
         }
@@ -98,7 +102,9 @@ namespace minigraph {
         int max_dep = p_size - 1;
         std::vector<EdgeIR> edge_ir_vec(p_size);
         std::vector<EdgeRestrictIR> res_ir_vec(p_size);
-
+        if (p_size <= 0 || p_size > 1000) {
+            throw std::runtime_error("Invalid p_size: " + std::to_string(p_size));
+        }
         std::vector<std::vector<VertexSetIR>> set_ops(max_dep);
         std::vector<VertexSetIR> iter_set(max_dep);
 
@@ -252,8 +258,12 @@ namespace minigraph {
         for (auto &mg_op: out.mg_ops) {
             for (auto itr = mg_op.begin(); itr != mg_op.end(); itr++) {
                 if (!IndeedUsed.at(itr->id)) {
-                    mg_op.erase(itr);
+                    itr = mg_op.erase(itr);  // erase returns next valid iterator
                 }
+                else {
+                    itr++;  // only increment if not erasing
+                }
+
             }
         }
         return out;
