@@ -1,0 +1,5 @@
+Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes
+roadNet-CA,Patterns,small_dense_4v_1,4,3,1,0.0597589,2.13908,10746270,71.4,1.00,100.0,SUCCESS,GraphMini-O  pattern worked!
+roadNet-CA,Patterns,small_dense_4v_1,4,3,4,0.0588328,0.550219,10746270,71.6,3.88,97.0,SUCCESS,GraphMini-O  pattern worked!
+roadNet-CA,Patterns,small_dense_4v_1,4,3,16,0.0600544,0.157937,10746270,72.4,13.54,84.6,SUCCESS,GraphMini-O  pattern worked!
+roadNet-CA,Patterns,small_dense_4v_1,4,3,32,0.0601782,0.0960433,10746270,73.1,22.27,69.5,SUCCESS,GraphMini-O  pattern worked!

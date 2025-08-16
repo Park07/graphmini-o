@@ -1,0 +1,33 @@
+=== Test Configuration ===
+Testing GraphMini-O (reverted version)
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Main results directory: /home/williamp/graphmini-o/results/comprehensive_o_20250816_064400
+
+=========================================
+STARTING COMPREHENSIVE TEST - GraphMini-O
+=========================================
+
+=========================================
+DATASET: dblp
+Results for dblp: /home/williamp/graphmini-o/results/comprehensive_o_20250816_064400/dblp_20250816_064401
+=========================================
+
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: ./comprehensive_graphmini_test.sh: line 138: 1420706 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+❌ FAILED
+  4t: ./comprehensive_graphmini_test.sh: line 138: 1420731 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+❌ FAILED
+  16t: ./comprehensive_graphmini_test.sh: line 138: 1420756 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+❌ FAILED
+  32t: ./comprehensive_graphmini_test.sh: line 138: 1420781 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+❌ FAILED
+  64t: ./comprehensive_graphmini_test.sh: line 138: 1420806 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+❌ FAILED
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ./comprehensive_graphmini_test.sh: line 138: 1420844 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1

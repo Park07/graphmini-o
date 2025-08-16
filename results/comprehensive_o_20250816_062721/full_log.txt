@@ -1,0 +1,264 @@
+=== Test Configuration ===
+Testing GraphMini-O (reverted version)
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Main results directory: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721
+
+=========================================
+STARTING COMPREHENSIVE TEST - GraphMini-O
+=========================================
+
+=========================================
+DATASET: dblp
+Results for dblp: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/dblp_20250816_062721
+=========================================
+
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: ./comprehensive_graphmini_test.sh: line 138: 1414957 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 12.9096s, 4816095 matches, 1.00x
+  4t: ./comprehensive_graphmini_test.sh: line 138: 1414984 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 3.41719s, 4816095 matches, 3.77x
+  16t: ./comprehensive_graphmini_test.sh: line 138: 1415019 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 0.947931s, 4816095 matches, 13.61x
+  32t: ./comprehensive_graphmini_test.sh: line 138: 1415066 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 0.508929s, 4816095 matches, 25.36x
+  64t: ./comprehensive_graphmini_test.sh: line 138: 1415129 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 0.340811s, 4816095 matches, 37.87x
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ./comprehensive_graphmini_test.sh: line 138: 1415237 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 13.0918s, 4816095 matches, 1.00x
+  4t: ./comprehensive_graphmini_test.sh: line 138: 1415263 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 3.38516s, 4816095 matches, 3.86x
+  16t: ./comprehensive_graphmini_test.sh: line 138: 1415298 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 0.961266s, 4816095 matches, 13.61x
+  32t: ./comprehensive_graphmini_test.sh: line 138: 1415345 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 0.508175s, 4816095 matches, 25.76x
+  64t: ./comprehensive_graphmini_test.sh: line 138: 1415408 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 0.340629s, 4816095 matches, 38.43x
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ./comprehensive_graphmini_test.sh: line 138: 1415516 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 12.7947s, 4816095 matches, 1.00x
+  4t: ./comprehensive_graphmini_test.sh: line 138: 1415542 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 3.49881s, 4816095 matches, 3.65x
+  16t: ./comprehensive_graphmini_test.sh: line 138: 1415577 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 0.991627s, 4816095 matches, 12.90x
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ TIMEOUT_CODEGEN (60s)
+
+=========================================
+DATASET: youtube
+Results for youtube: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/youtube_20250816_063052
+=========================================
+
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ./comprehensive_graphmini_test.sh: line 138: 1415708 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+❌ TIMEOUT_EXEC (300s)
+  4t: ./comprehensive_graphmini_test.sh: line 138: 1416604 Floating point exceptiontimeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+✅ 1.12158s, 4986965 matches, N/Ax
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+=========================================
+DATASET: roadNet-CA
+Results for roadNet-CA: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/roadNet-CA_20250816_063554
+=========================================
+
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 10e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+=========================================
+DATASET: enron
+Results for enron: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/enron_20250816_063555
+=========================================
+
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+=========================================
+DATASET: lj
+Results for lj: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/lj_20250816_063555
+=========================================
+
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+=========================================
+DATASET: wiki
+Results for wiki: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/wiki_20250816_063556
+=========================================
+
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+=========================================
+COMPREHENSIVE TEST COMPLETE - GraphMini-O
+=========================================
+Ended at: Sat Aug 16 06:35:57 AM UTC 2025
+
+=== SUMMARY ===
+Main results CSV: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/comprehensive_results.csv
+Full log: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/full_log.txt
+
+Test outcomes:
+  Successful: 14
+  Timeouts: 2
+  Failures: 78
+
+Per-dataset results saved in:
+  dblp: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/dblp_20250816_062721
+  youtube: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/youtube_20250816_063052
+  roadNet-CA: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/roadNet-CA_20250816_063554
+  enron: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/enron_20250816_063555
+  lj: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/lj_20250816_063555
+  wiki: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062721/wiki_20250816_063556
+
+=== GraphMini-O Version Info ===
+Git branch: revert-to-5ba4517
+Git commit: 3905f8f
+Test completed on: radonduo

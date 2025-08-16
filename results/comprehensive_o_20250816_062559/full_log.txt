@@ -1,0 +1,73 @@
+=== Test Configuration ===
+Testing GraphMini-O (reverted version)
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Main results directory: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062559
+
+=========================================
+STARTING COMPREHENSIVE TEST - GraphMini-O
+=========================================
+
+=========================================
+DATASET: dblp
+Results for dblp: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062559/dblp_20250816_062559
+=========================================
+
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 9e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+Testing: small_sparse_8v (pattern #1)
+  Pattern: 8v, 15e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+
+=========================================
+DATASET: youtube
+Results for youtube: /home/williamp/graphmini-o/results/comprehensive_o_20250816_062559/youtube_20250816_062600
+=========================================
+
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: ❌ FAILED
+  4t: ❌ FAILED
+  16t: ❌ FAILED
+  32t: ❌ FAILED
+  64t: ❌ FAILED
+
+Testing: small_dense_8v (pattern #1)
+  Pattern: 8v, 7e
+  1t: ❌ FAILED
+  4t: 

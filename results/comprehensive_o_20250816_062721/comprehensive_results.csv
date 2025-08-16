@@ -1,0 +1,95 @@
+Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes
+dblp,Patterns,small_dense_4v_1,4,4,1,0.0165724,12.9096,4816095,20.5,1.00,100.0,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_dense_4v_1,4,4,4,0.0175016,3.41719,4816095,21.4,3.77,94.2,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_dense_4v_1,4,4,16,0.0171669,0.947931,4816095,24.5,13.61,85.0,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_dense_4v_1,4,4,32,0.0166935,0.508929,4816095,30.2,25.36,79.2,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_dense_4v_1,4,4,64,0.0168964,0.340811,4816095,40.4,37.87,59.1,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_sparse_4v_1,4,3,1,0.0168211,13.0918,4816095,20.4,1.00,100.0,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_sparse_4v_1,4,3,4,0.0168278,3.38516,4816095,21.5,3.86,96.5,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_sparse_4v_1,4,3,16,0.0178575,0.961266,4816095,24.4,13.61,85.0,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_sparse_4v_1,4,3,32,0.016804,0.508175,4816095,28.5,25.76,80.5,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_sparse_4v_1,4,3,64,0.0176798,0.340629,4816095,40.2,38.43,60.0,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_dense_8v_1,8,9,1,0.0185907,12.7947,4816095,20.5,1.00,100.0,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_dense_8v_1,8,9,4,0.0179989,3.49881,4816095,21.3,3.65,91.2,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_dense_8v_1,8,9,16,0.0180431,0.991627,4816095,24.1,12.90,80.6,SUCCESS,GraphMini-O pattern worked!
+dblp,Patterns,small_sparse_8v_1,8,15,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_CODEGEN,Code generation timeout (60s)
+youtube,Patterns,small_dense_4v_1,4,3,1,N/A,N/A,N/A,N/A,N/A,N/A,TIMEOUT_EXEC,Execution timeout (300s)
+youtube,Patterns,small_dense_4v_1,4,3,4,0.0396127,1.12158,4986965,54.8,N/A,N/A,SUCCESS,GraphMini-O pattern worked!
+youtube,Patterns,small_dense_4v_1,4,3,16,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_dense_4v_1,4,3,32,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_dense_4v_1,4,3,64,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_sparse_4v_1,4,3,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_sparse_4v_1,4,3,4,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_sparse_4v_1,4,3,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_sparse_4v_1,4,3,32,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_sparse_4v_1,4,3,64,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_dense_8v_1,8,7,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_dense_8v_1,8,7,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_dense_8v_1,8,7,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_sparse_8v_1,8,7,1,N/A,N/A,N/A,1.0,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_sparse_8v_1,8,7,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+youtube,Patterns,small_sparse_8v_1,8,7,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_dense_4v_1,4,3,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_dense_4v_1,4,3,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_dense_4v_1,4,3,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_dense_4v_1,4,3,32,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_dense_4v_1,4,3,64,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_sparse_4v_1,4,3,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_sparse_4v_1,4,3,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_sparse_4v_1,4,3,16,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_sparse_4v_1,4,3,32,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_sparse_4v_1,4,3,64,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_dense_8v_1,8,10,1,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_dense_8v_1,8,10,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_dense_8v_1,8,10,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_sparse_8v_1,8,9,1,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_sparse_8v_1,8,9,4,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+roadNet-CA,Patterns,small_sparse_8v_1,8,9,16,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_dense_4v_1,4,3,1,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_dense_4v_1,4,3,4,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_dense_4v_1,4,3,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_dense_4v_1,4,3,32,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_dense_4v_1,4,3,64,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_sparse_4v_1,4,4,1,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_sparse_4v_1,4,4,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_sparse_4v_1,4,4,16,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_sparse_4v_1,4,4,32,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_sparse_4v_1,4,4,64,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_dense_8v_1,8,15,1,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_dense_8v_1,8,15,4,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_dense_8v_1,8,15,16,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_sparse_8v_1,8,15,1,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_sparse_8v_1,8,15,4,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+enron,Patterns,small_sparse_8v_1,8,15,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_dense_4v_1,4,3,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_dense_4v_1,4,3,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_dense_4v_1,4,3,16,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_dense_4v_1,4,3,32,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_dense_4v_1,4,3,64,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_sparse_4v_1,4,3,1,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_sparse_4v_1,4,3,4,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_sparse_4v_1,4,3,16,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_sparse_4v_1,4,3,32,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_sparse_4v_1,4,3,64,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_dense_8v_1,8,7,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_dense_8v_1,8,7,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_dense_8v_1,8,7,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_sparse_8v_1,8,7,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_sparse_8v_1,8,7,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+lj,Patterns,small_sparse_8v_1,8,7,16,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_dense_4v_1,4,3,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_dense_4v_1,4,3,4,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_dense_4v_1,4,3,16,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_dense_4v_1,4,3,32,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_dense_4v_1,4,3,64,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_sparse_4v_1,4,3,1,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_sparse_4v_1,4,3,4,N/A,N/A,N/A,1.0,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_sparse_4v_1,4,3,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_sparse_4v_1,4,3,32,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_sparse_4v_1,4,3,64,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_dense_8v_1,8,9,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_dense_8v_1,8,9,4,N/A,N/A,N/A,.9,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_dense_8v_1,8,9,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_sparse_8v_1,8,9,1,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_sparse_8v_1,8,9,4,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed
+wiki,Patterns,small_sparse_8v_1,8,9,16,N/A,N/A,N/A,.8,N/A,N/A,FAILED,Execution failed

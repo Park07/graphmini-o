@@ -1,0 +1,15 @@
+\begin{tabular}{l l r r c S[table-format = 2.1]}
+\toprule
+\toprule
+\textbf{Category} &         \textbf{Dataset Name} & \textbf{|V|} & \textbf{|E|} & \textbf{|$\Sigma$|} & \textbf{$\bar{d}$} \\ \\
+\midrule
+\midrule
+  Social Networks &              LiveJournal (lj) &    4,847,571 &   68,993,773 &              287512 &     \bfseries 28.5 \\
+                  &             Youtube (youtube) &    1,134,890 &    2,987,624 &                8385 &                5.3 \\
+    Collaboration &                   DBLP (dblp) &      317,080 &    1,049,866 &               13477 &                6.6 \\
+    Communication &                 Enron (enron) &       36,692 &      183,831 &                   - &               10.0 \\
+                  &         Wikipedia Talk (wiki) &    2,394,385 &    5,021,410 &                   - &                4.2 \\
+    Road Networks & California Roads (roadNet-CA) &    1,965,206 &    2,766,607 &                   - &                2.8 \\
+\bottomrule
+\bottomrule
+\end{tabular}

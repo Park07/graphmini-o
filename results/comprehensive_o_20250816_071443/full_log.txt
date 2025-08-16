@@ -1,0 +1,280 @@
+=== Test Configuration ===
+Testing GraphMini-O (reverted version)
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Main results directory: /home/williamp/graphmini-o/results/comprehensive_o_20250816_071443
+
+=========================================
+STARTING COMPREHENSIVE TEST - GraphMini-O
+=========================================
+
+=========================================
+DATASET: dblp
+Results for dblp: /home/williamp/graphmini-o/results/comprehensive_o_20250816_071443/dblp_20250816_071443
+=========================================
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0101100100011110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0101100100011110
+✅ 4.75247s, 96615211 matches, 1.00x
+  4t: Generating code for pattern: 0101100100011110
+✅ 1.37162s, 96615211 matches, 3.46x
+  16t: Generating code for pattern: 0101100100011110
+✅ 0.372536s, 96615211 matches, 12.75x
+  32t: Generating code for pattern: 0101100100011110
+✅ 0.210777s, 96615211 matches, 22.54x
+  64t: Generating code for pattern: 0101100100011110
+✅ 0.138195s, 96615211 matches, 34.38x
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100110000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0110100110000100
+✅ 4.92436s, 252447350 matches, 1.00x
+  4t: Generating code for pattern: 0110100110000100
+✅ 1.33633s, 252447350 matches, 3.68x
+  16t: Generating code for pattern: 0110100110000100
+✅ 0.399508s, 252447350 matches, 12.32x
+  32t: Generating code for pattern: 0110100110000100
+✅ 0.208646s, 252447350 matches, 23.60x
+  64t: Generating code for pattern: 0110100110000100
+✅ 0.141421s, 252447350 matches, 34.82x
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 9 edges
+Generated binary matrix: 0011010000000110100001001000100000010001111000100100010000001000 (length: 64)
+  Pattern: 8v, 9e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0011010000000110100001001000100000010001111000100100010000001000
+❌ TIMEOUT_CODEGEN (30s)
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 15 edges
+Generated binary matrix: 0000100000111100010111010110000011100111011010110000110100101110 (length: 64)
+  Pattern: 8v, 15e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0000100000111100010111010110000011100111011010110000110100101110
+❌ TIMEOUT_CODEGEN (30s)
+
+=========================================
+DATASET: youtube
+Results for youtube: /home/williamp/graphmini-o/results/comprehensive_o_20250816_071443/youtube_20250816_071631
+=========================================
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101101000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0100101101000100
+❌ TIMEOUT_CODEGEN (30s)
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010001111000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0010001111000100
+❌ TIMEOUT_CODEGEN (30s)
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 7 edges
+Generated binary matrix: 0010000000001000100100000010010101000010000100100000110000010000 (length: 64)
+  Pattern: 8v, 7e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0010000000001000100100000010010101000010000100100000110000010000
+❌ TIMEOUT_CODEGEN (30s)
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 7 edges
+Generated binary matrix: 0001100000100100010000011000001010000000010000000001000100100010 (length: 64)
+  Pattern: 8v, 7e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0001100000100100010000011000001010000000010000000001000100100010
+❌ TIMEOUT_CODEGEN (30s)
+
+=========================================
+DATASET: roadNet-CA
+Results for roadNet-CA: /home/williamp/graphmini-o/results/comprehensive_o_20250816_071443/roadNet-CA_20250816_071832
+=========================================
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0001001101001100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0001001101001100
+✅ 2.13983s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0001001101001100
+✅ 0.551782s, 10746270 matches, 3.87x
+  16t: Generating code for pattern: 0001001101001100
+✅ 0.160041s, 10746270 matches, 13.37x
+  32t: Generating code for pattern: 0001001101001100
+✅ 0.0944132s, 10746270 matches, 22.66x
+  64t: Generating code for pattern: 0001001101001100
+✅ 0.072033s, 10746270 matches, 29.70x
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0010000110010110
+✅ 2.07452s, 10746270 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 0.519576s, 10746270 matches, 3.99x
+  16t: Generating code for pattern: 0010000110010110
+✅ 0.157938s, 10746270 matches, 13.13x
+  32t: Generating code for pattern: 0010000110010110
+✅ 0.0968839s, 10746270 matches, 21.41x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.0725459s, 10746270 matches, 28.59x
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 10 edges
+Generated binary matrix: 0110000010010000100100100110010000000110000110100010110100000010 (length: 64)
+  Pattern: 8v, 10e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0110000010010000100100100110010000000110000110100010110100000010
+❌ TIMEOUT_CODEGEN (30s)
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/roadNet-CA/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 9 edges
+Generated binary matrix: 0000011000110000010000000100100000010110100010111000110000000100 (length: 64)
+  Pattern: 8v, 9e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0000011000110000010000000100100000010110100010111000110000000100
+❌ TIMEOUT_CODEGEN (30s)
+
+=========================================
+DATASET: enron
+Results for enron: /home/williamp/graphmini-o/results/comprehensive_o_20250816_071443/enron_20250816_072004
+=========================================
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010000110010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0010000110010110
+✅ 18.8851s, 1371828020 matches, 1.00x
+  4t: Generating code for pattern: 0010000110010110
+✅ 4.87353s, 1371828020 matches, 3.87x
+  16t: Generating code for pattern: 0010000110010110
+✅ 1.37016s, 1371828020 matches, 13.78x
+  32t: Generating code for pattern: 0010000110010110
+✅ 0.804583s, 1371828020 matches, 23.47x
+  64t: Generating code for pattern: 0010000110010110
+✅ 0.522169s, 1371828020 matches, 36.16x
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0100101101010110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0100101101010110
+✅ 6.22232s, 375691411 matches, 1.00x
+  4t: Generating code for pattern: 0100101101010110
+✅ 1.62348s, 375691411 matches, 3.83x
+  16t: Generating code for pattern: 0100101101010110
+✅ 0.464362s, 375691411 matches, 13.39x
+  32t: Generating code for pattern: 0100101101010110
+✅ 0.259662s, 375691411 matches, 23.96x
+  64t: Generating code for pattern: 0100101101010110
+✅ 0.174526s, 375691411 matches, 35.65x
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 15 edges
+Generated binary matrix: 0000010000111110010011100100010001100111111110100110110100001010 (length: 64)
+  Pattern: 8v, 15e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0000010000111110010011100100010001100111111110100110110100001010
+❌ TIMEOUT_CODEGEN (30s)
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/enron/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 15 edges
+Generated binary matrix: 0000010000111110010011100100010001100111111110100110110100001010 (length: 64)
+  Pattern: 8v, 15e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0000010000111110010011100100010001100111111110100110110100001010
+❌ TIMEOUT_CODEGEN (30s)
+
+=========================================
+DATASET: lj
+Results for lj: /home/williamp/graphmini-o/results/comprehensive_o_20250816_071443/lj_20250816_072234
+=========================================
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_CODEGEN (30s)
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100100100010110 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0100100100010110
+❌ TIMEOUT_CODEGEN (30s)
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/lj/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 7 edges
+Generated binary matrix: 0000101000010001000100100110000010000100000010001010000001000000 (length: 64)
+  Pattern: 8v, 7e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0000101000010001000100100110000010000100000010001010000001000000

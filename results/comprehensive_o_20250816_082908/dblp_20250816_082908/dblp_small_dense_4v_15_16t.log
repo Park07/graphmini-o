@@ -1,0 +1,30 @@
+Threads=16
+LoadTime(s)=0.0195275
+CODE_EXECUTION_TIME(s)=0.238981
+RESULT=4764685
+Throughput=1.99375e+07
+VertexSetAllocated=0.00 Bytes
+MiniGraphAllocated=4.11 MB
+	Command being timed: "./bin/runner 16 /home/williamp/thesis_data/snap_format/dblp/"
+	User time (seconds): 3.77
+	System time (seconds): 0.03
+	Percent of CPU this job got: 1431%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 23980
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 5494
+	Voluntary context switches: 172
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

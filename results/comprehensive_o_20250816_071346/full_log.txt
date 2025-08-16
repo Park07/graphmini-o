@@ -1,0 +1,45 @@
+=== Test Configuration ===
+Testing GraphMini-O (reverted version)
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Main results directory: /home/williamp/graphmini-o/results/comprehensive_o_20250816_071346
+
+=========================================
+STARTING COMPREHENSIVE TEST - GraphMini-O
+=========================================
+
+=========================================
+DATASET: dblp
+Results for dblp: /home/williamp/graphmini-o/results/comprehensive_o_20250816_071346/dblp_20250816_071346
+=========================================
+
+--- Skipping P1-P8 patterns for GraphMini-O comparison ---
+    (Focus on your generated patterns only)
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0101100100011110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0101100100011110
+✅ 4.75202s, 96615211 matches, 1.00x
+  4t: Generating code for pattern: 0101100100011110
+✅ 1.28882s, 96615211 matches, 3.68x
+  16t: Generating code for pattern: 0101100100011110
+✅ 0.356678s, 96615211 matches, 13.32x
+  32t: Generating code for pattern: 0101100100011110
+✅ 0.198626s, 96615211 matches, 23.92x
+  64t: Generating code for pattern: 0101100100011110
+✅ 0.141309s, 96615211 matches, 33.62x
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100110000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=30s, exec=210s
+  1t: Generating code for pattern: 0110100110000100

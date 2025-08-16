@@ -573,7 +573,8 @@ void Schedule::get_schedule(const char *_adj_mat, int _size, uint64_t v_cnt, uin
         set_in_exclusion_optimize_num(tmp + 1); // change the number back to the correct one
         init_in_exclusion_optimize();
         delete complete;
-        in_exclusion_optimize_redundancy = ans / true_ans;
+        in_exclusion_optimize_redundancy = (true_ans != 0) ? (ans / true_ans) : 1;
+
     }
     print_schedule();
 };

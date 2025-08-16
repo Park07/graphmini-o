@@ -1,0 +1,109 @@
+=== Test Configuration ===
+Testing GraphMini-O (reverted version)
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Main results directory: /home/williamp/graphmini-o/results/comprehensive_o_20250816_073343
+
+=========================================
+STARTING COMPREHENSIVE TEST - GraphMini-O
+=========================================
+
+=========================================
+DATASET: dblp
+Results for dblp: /home/williamp/graphmini-o/results/comprehensive_o_20250816_073343/dblp_20250816_073343
+=========================================
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 4 edges
+Generated binary matrix: 0101100100011110 (length: 16)
+  Pattern: 4v, 4e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=180s, exec=210s
+  1t: Generating code for pattern: 0101100100011110
+✅ 4.33007s, 96615211 matches, 1.00x
+  4t: Generating code for pattern: 0101100100011110
+✅ 1.28926s, 96615211 matches, 3.35x
+  16t: Generating code for pattern: 0101100100011110
+✅ 0.357683s, 96615211 matches, 12.10x
+  32t: Generating code for pattern: 0101100100011110
+✅ 0.198146s, 96615211 matches, 21.85x
+  64t: Generating code for pattern: 0101100100011110
+✅ 0.137277s, 96615211 matches, 31.54x
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0110100110000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=180s, exec=210s
+  1t: Generating code for pattern: 0110100110000100
+✅ 4.91801s, 252447350 matches, 1.00x
+  4t: Generating code for pattern: 0110100110000100
+✅ 1.33709s, 252447350 matches, 3.67x
+  16t: Generating code for pattern: 0110100110000100
+✅ 0.384727s, 252447350 matches, 12.78x
+  32t: Generating code for pattern: 0110100110000100
+✅ 0.207706s, 252447350 matches, 23.67x
+  64t: Generating code for pattern: 0110100110000100
+✅ 0.145342s, 252447350 matches, 33.83x
+
+Testing: small_dense_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_dense_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 9 edges
+Generated binary matrix: 0011010000000110100001001000100000010001111000100100010000001000 (length: 64)
+  Pattern: 8v, 9e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=180s, exec=210s
+  1t: Generating code for pattern: 0011010000000110100001001000100000010001111000100100010000001000
+./comprehensive_graphmini_test.sh: line 153: 1437160 Aborted                 timeout $codegen_timeout ./bin/run "$dataset" "${DATA_ROOT}/${dataset}/" "$pattern_name" "$pattern_binary" 0 4 3 > /tmp/run.log 2>&1
+❌ CODEGEN_FAILED (exit code: 134)
+Error log:
+PATTERN_SIZE=8
+ADJ_MATRIX=01100110 10010010 10000100 01001000 00010001 10100000 11000000 00001000 
+RESTRICTS=(2,5)
+IEP Number	3
+IEP Redundency	1
+IEP Val	1 -1 -1 -1 2 
+IEP Group	[(0),(1),(2)] | [(0 2),(1)] | [(0),(1 2)] | [(0 1),(2)] | [(0 1 2)] | SCHEDULING_TIME(s)=31.8364
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector<bool>::_M_range_check: __n (which is 212149472) >= this->size() (which is 7)
+timeout: the monitored command dumped core
+
+Testing: small_sparse_8v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/dblp/small_sparse_8v/query_sample_8v_1.graph
+Pattern has 8 vertices, 15 edges
+Generated binary matrix: 0000100000111100010111010110000011100111011010110000110100101110 (length: 64)
+  Pattern: 8v, 15e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=180s, exec=210s
+  1t: Generating code for pattern: 0000100000111100010111010110000011100111011010110000110100101110
+❌ TIMEOUT_CODEGEN (180s)
+
+=========================================
+DATASET: youtube
+Results for youtube: /home/williamp/graphmini-o/results/comprehensive_o_20250816_073343/youtube_20250816_073802
+=========================================
+
+--- Testing Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_dense_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0100101101000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=180s, exec=210s
+  1t: Generating code for pattern: 0100101101000100
+❌ TIMEOUT_CODEGEN (180s)
+
+Testing: small_sparse_4v (pattern #1)
+Loading pattern from: /home/williamp/thesis_data/query_sets/youtube/small_sparse_4v/query_sample_4v_1.graph
+Pattern has 4 vertices, 3 edges
+Generated binary matrix: 0010001111000100 (length: 16)
+  Pattern: 4v, 3e
+  Thread counts: 1 4 16 32 64
+  Timeouts: codegen=180s, exec=210s
+  1t: Generating code for pattern: 0010001111000100

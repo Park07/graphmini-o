@@ -1,0 +1,27 @@
+=== Test Configuration ===
+Testing GraphMini-O (reverted version)
+Datasets: dblp youtube roadNet-CA enron lj wiki
+Main results directory: /home/williamp/graphmini-o/results/comprehensive_o_20250816_070046
+
+=========================================
+STARTING COMPREHENSIVE TEST - GraphMini-O
+=========================================
+
+=========================================
+DATASET: dblp
+Results for dblp: /home/williamp/graphmini-o/results/comprehensive_o_20250816_070046/dblp_20250816_070046
+=========================================
+
+--- Skipping P1-P8 patterns for GraphMini-O comparison ---
+    (Focus on your generated patterns only)
+
+--- Testing Your Generated Patterns ---
+
+Testing: small_dense_4v (pattern #1)
+  Pattern: 4v, 4e
+  1t: Generating code for pattern: 0101100100011110
+❌ RUNNER_NOT_BUILT
+
+Testing: small_sparse_4v (pattern #1)
+  Pattern: 4v, 3e
+  1t: Generating code for pattern: 0110100110000100

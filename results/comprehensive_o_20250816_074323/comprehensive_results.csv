@@ -1,0 +1,3 @@
+Dataset,Pattern_Type,Pattern_Name,Vertices,Edges,Threads,LoadTime_s,ExecutionTime_s,Result_Count,Memory_MB,Speedup,Efficiency,Status,Notes
+dblp,Patterns,small_dense_4v_1,4,4,1,0.0177796,4.78471,96615211,20.7,1.00,100.0,SUCCESS,GraphMini-O  pattern worked!
+dblp,Patterns,small_dense_4v_1,4,4,4,0.0175624,1.3649,96615211,21.2,3.50,87.5,SUCCESS,GraphMini-O  pattern worked!

@@ -1,0 +1,26 @@
+\documentclass[tikz,crop,convert={density=400,outext=.png}]{standalone}
+\usepackage{booktabs}
+\usepackage{etoolbox}
+\usepackage[round-mode=places,detect-weight=true,detect-inline-weight=math]{siunitx}
+\usepackage{array}
+
+% Improve table spacing
+\renewcommand\arraystretch{1.3}
+\setlength{\tabcolsep}{8pt}
+
+\begin{document}
+\begin{table}
+\robustify\bfseries
+\caption{Statistics of SNAP datasets used in evaluation}
+\centering
+\input{snap_datasets_table.tbl}
+\begin{tablenotes}
+\small
+\item \textbf{|V|}: Number of vertices (nodes)
+\item \textbf{|E|}: Number of edges  
+\item \textbf{|$\Sigma$|}: Number of ground-truth communities (when available)
+\item \textbf{$\bar{d}$}: Average degree (calculated as $2|E|/|V|$ for undirected graphs)
+\end{tablenotes}
+\label{tab:snap_datasets}
+\end{table}
+\end{document}
