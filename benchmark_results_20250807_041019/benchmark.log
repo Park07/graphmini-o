@@ -1,0 +1,24 @@
+Results directory: /Users/williampark/graphmini-o/benchmark_results_20250807_041019
+
+Starting with small test to verify setup...
+Testing single query: query_sparse_8_1.graph
+
+=== Test: wiki_small_sparse_query_sparse_8_1_1t ===
+Query: 8 vertices, 11 edges
+Timeout: 600s, Threads: 1
+Binary conversion successful (64 chars)
+Generating code...
+Code generation FAILED (exit: 139)
+IEP Number	3
+IEP Redundency	0
+IEP Val	1 -1 -1 -1 2 
+IEP Group	[(0),(1),(2)] | [(0 2),(1)] | [(0),(1 2)] | [(0 1),(2)] | [(0 1 2)] | SCHEDULING_TIME(s)=184.757
+./unified_framework.sh: line 39: 80765 Segmentation fault: 11  "${command[@]}"
+⚠️ Test failed with status: CODEGEN_FAILED
+Check logs before running full benchmark
+
+Creating summary...
+=== Completion Rates by Category ===
+small_sparse        :   0.0% (0/1 completed)
+
+Benchmark complete. Results in: /Users/williampark/graphmini-o/benchmark_results_20250807_041019

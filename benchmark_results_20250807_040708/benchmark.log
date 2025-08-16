@@ -1,0 +1,19 @@
+Results directory: /Users/williampark/graphmini-o/benchmark_results_20250807_040708
+
+Starting with small test to verify setup...
+Testing single query: query_sparse_8_1.graph
+
+=== Test: wiki_small_sparse_query_sparse_8_1_1t ===
+Query: 8 vertices, 11 edges
+Timeout: 600s, Threads: 1
+Binary conversion successful (64 chars)
+Generating code...
+Code generation TIMEOUT
+⚠️ Test failed with status: CODEGEN_TIMEOUT
+Check logs before running full benchmark
+
+Creating summary...
+=== Completion Rates by Category ===
+small_sparse        :   0.0% (0/1 completed)
+
+Benchmark complete. Results in: /Users/williampark/graphmini-o/benchmark_results_20250807_040708

@@ -1,0 +1,21 @@
+Assertion failed: (std::filesystem::is_regular_file(path) && "Meta file does not exists"), function read, file meta.cpp, line 34.
+time: command terminated abnormally
+        0.02 real         0.00 user         0.00 sys
+             2850816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                 217  page reclaims
+                  57  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   9  voluntary context switches
+                  49  involuntary context switches
+            29161344  instructions retired
+             9858808  cycles elapsed
+             1442304  peak memory footprint
+Threads=1

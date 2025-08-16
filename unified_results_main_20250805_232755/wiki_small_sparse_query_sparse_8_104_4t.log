@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/williampark/graphmini-o/run_with_timeout.py", line 3, in <module>
+    import subprocess
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 49, in <module>
+    import signal
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/signal.py", line 3, in <module>
+    from functools import wraps as _wraps
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/functools.py", line 18, in <module>
+    from collections import namedtuple
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/collections/__init__.py", line 1263, in <module>
+    class UserString(_collections_abc.Sequence):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/abc.py", line 106, in __new__
+    cls = super().__new__(mcls, name, bases, namespace, **kwargs)
+KeyboardInterrupt

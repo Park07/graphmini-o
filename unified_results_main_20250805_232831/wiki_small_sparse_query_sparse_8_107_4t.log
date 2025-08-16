@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/williampark/graphmini-o/run_with_timeout.py", line 3, in <module>
+    import subprocess
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 49, in <module>
+    import signal
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 945, in get_code
+KeyboardInterrupt

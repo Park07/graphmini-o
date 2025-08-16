@@ -1,0 +1,8 @@
+PATTERN_SIZE=8
+ADJ_MATRIX=01110110 10010100 10000110 11001000 00010001 11100000 10100000 00001000 
+RESTRICTS=
+IEP Number	3
+IEP Redundency	0
+IEP Val	1 -1 -1 -1 2 
+IEP Group	[(0),(1),(2)] | [(0 2),(1)] | [(0),(1 2)] | [(0 1),(2)] | [(0 1 2)] | SCHEDULING_TIME(s)=184.757
+./unified_framework.sh: line 39: 80765 Segmentation fault: 11  "${command[@]}"

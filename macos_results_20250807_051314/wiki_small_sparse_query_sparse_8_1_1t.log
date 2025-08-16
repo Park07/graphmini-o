@@ -1,0 +1,1 @@
+bash: line 3:  1085 Abort trap: 6           '/Users/williampark/graphmini-o/build/bin/run' 'wiki' '/Users/williampark/graphmini-o/dataset/GraphMini/wiki' 'query_sparse_8_1' '0111110010100010110010001000010010100100100110000100000100000010' 0 4 3 > /dev/null 2>&1
